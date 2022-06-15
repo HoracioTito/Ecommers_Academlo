@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <nav class=" container">
+            <div>
+                <img src="./assets/images/logoAcademlo.svg" alt="">
+            </div>
+            <div class="moon-bag">
+                <i class='bx bxs-shopping-bag bx-sm pointer'></i>
+                <i class='bx bx-sun bx-sm pointer' id="theme-toggler"></i>
+            </div>
+            <input type="checkbox" id="menu-hamburguesa">
+            <label for="menu-hamburguesa">
+                <i class="bx bx-grid-alt"></i>
+            </label>
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="#s-about">
+                    <li>Acerca de mi</li>
+                </a>
+                  <a href="#s-about">
+                <li>Contacto</li>
+              </a>
+            </ul>
+        </nav>
+    </header>
+    <!-- HOME PRODUCTO -->
+    <section class="home  container" id="home">
+        <div class="home-content">
+            <div class="home-img">
+            <img src="./assets/items_img/home.png" alt="" class="x">
+            </div>
+    
+            <div class="home-info">
+                <h1 class="home-title">New Sweatshirt <br> COLLECTIONS 2022</h1>
+                <p class="home-description">
+                    Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+                    design.
+                </p>
+                <p class="home-price">$14.00</p>
+        
+                <div class="home-btn">
+                    <a href="#" class="home-btn-discover">
+                    Discover
+                    </a>
+        
+                    <button class="home-btn-sale">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- CART PRODUCTS ( cart-show)  -->
+    <div class="cart  container" id="cart-float">
+        <i class="bx bx-x bx-sm" id="cart-close"></i>
+    
+        <h2 class="txc">My Cart</h2>
+    
+        <div class="cart-product" id="cart-product-id">
+
+            <div>
+                <img src="./assets/images/empty-cart.png" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="cart-total"  id="cart-pay-total">
+            <!-- Total Pay fo Cart -->
+        </div>
+        <div class="checkout">
+          <button class="btn-checkout" id="cart-checkout"><i class="bx bxs-check-shield"></i> Checkout</button>
+        </div>
+    
+      </div>
+    <!-- CART PRODUCTS END -->  
+
+    <!-- CONTENEDOR PRODUCTOS -->
+    <section class="cont-product  container">
+        <!-- MENU-->
+        <div class="cont-product-menu">
+           <ul class="cont-product-ul" id="li-menu">
+                <li id="id-all" >All</li>
+                <li id="id-1">shirt</li>
+                <li id="id-2">shirt</li>
+                <li id="id-3">shirt</li>
+                <li id="id-4">shirt</li>
+                <li id="id-5">shirt</li>
+           </ul>
+        </div>
+        <!-- MENU END -->
+        <!-- PRODUCT GRID -->
+        <div class="product-grid" id="id-products">
+            <div class="article model1">
+                <img  src="./assets/items_img/featured1.png" class="article-img">
+                <div class="info">
+                    <h2 class="price">$24.00 <small class="stock">| Stock: 20</small></h2>
+                    <h3 class="article-name">Sweatshirts</h3>
+                    <button class="product-button" data-id="3">
+                    <i class="bx bx-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="article model2">
+                <img  src="./assets/items_img/featured1.png" class="article-img">
+                <div class="info">
+                    <h2 class="price">$24.00 <small class="stock">| Stock: 20</small></h2>
+                    <h3 class="article-name">Sweatshirts</h3>
+                    <button class="product-button" data-id="3">
+                    <i class="bx bx-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="article model3">
+                <img  src="./assets/items_img/featured1.png" class="article-img">
+                <div class="info">
+                    <h2 class="price">$24.00 <small class="stock">| Stock: 20</small></h2>
+                    <h3 class="article-name">Sweatshirts</h3>
+                    <button class="product-button" data-id="3">
+                    <i class="bx bx-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="article model4">
+                <img  src="./assets/items_img/featured1.png" class="article-img">
+                <div class="info">
+                    <h2 class="price">$24.00 <small class="stock">| Stock: 20</small></h2>
+                    <h3 class="article-name">Sweatshirts</h3>
+                    <button class="product-button" data-id="3">
+                    <i class="bx bx-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="article model5">
+                <img  src="./assets/items_img/featured1.png" class="article-img">
+                <div class="info">
+                    <h2 class="price">$24.00 <small class="stock">| Stock: 20</small></h2>
+                    <h3 class="article-name">Sweatshirts</h3>
+                    <button class="product-button" data-id="3">
+                    <i class="bx bx-plus"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- PRODUCT GRID END-->
+
+    </section>
+    <!-- CONTENEDOR PRODUCTOS END -->
+    <footer class=" container">
+        <div class="footer grid">
+            <div class="footer-cont">
+              <h3 class="ecommers">Our information</h3>
+      
+              <ul class="footer-ul">
+                <li>Cordoba - Argentina</li>
+              </ul>
+            </div>
+            <div class="cont">
+              <h3 class="ecommers" id="s-about">About Us</h3>
+      
+              <ul class="footer-ul">
+                <li>
+                  <a href="#" class="footer-link">Support Center</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Customer Support</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">About Us</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Copy Right</a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="footer_-cont">
+              <h3 class="ecommers">Product</h3>
+      
+              <ul class="footer-ul">
+                <li>
+                  <a href="#" class="footer-link">Hoodies</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Shirts</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Sweatshirts</a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="footer-cont">
+              <h3 class="ecommers">Social</h3>
+      
+              <ul class="footer-red">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+      
+                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+      
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+        <div class="my-info">
+            <h2 class="ecommers">Ecommers</h2>
+            <h4>Horacio Choque</h4>
+            <h5>Hecho con ♥ en Academlo</h5>
+            <br>
+        </div>  
+    </footer>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
