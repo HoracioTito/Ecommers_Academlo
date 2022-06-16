@@ -142,6 +142,19 @@ input#menu-hamburguesa:checked ~ ul{
     z-index: 200;
 }
 
+.num-item{ 
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 18px 0 0 18px;
+    font-size: .7rem;
+}   
+
 /*  NAV END */
 
 /* CART FLOAT */
@@ -166,7 +179,7 @@ input#menu-hamburguesa:checked ~ ul{
     row-gap: 1.5rem;
     max-height: 400px;
     height: 100%;
-    overflow: auto;
+    overflow: scroll;
 }
 
 /* cart product */
@@ -471,6 +484,60 @@ input#menu-hamburguesa:checked ~ ul{
      }
     
 }
+@media  screen and ( min-width: 599px ) {
+
+    .home-content{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: space-around;
+    gap: 50px;
+    }
+
+    .home-img {
+       /* display: flex;
+        justify-items: center;
+        justify-content: center; */
+        order: 0;
+        /* background-color: var(--first-color);
+        transform: translate(0px,-31px);
+        max-width: 100%;
+        height: fit-content; */
+    }
+    .cart {
+        width: 420px;
+    }
+    .cart-unit {
+        gap: 40px;
+    }
+
+    .cont-product-ul {
+        grid-template-columns: 1fr 1fr ;
+    }
+    .title-menu {
+        font-size: 1.2rem;
+    }
+
+    .pointer{
+            cursor: pointer;
+    }
+
+    .product-grid{
+       /* display: grid; */
+        grid-template-columns: 220px 220px ;
+       /* justify-content: center;
+        justify-items: center; */
+        gap: 40px;
+        /* padding: 20px; */
+     }
+
+     .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+     }
+
+}
+
 
 @media  screen and ( min-width: 750px ) {
 

@@ -546,12 +546,18 @@ function cartUpdate(){
 
 /* Html Total Cart  */
 function cartUpdateTotal(total ,items){
+ 
+  /* Informacion Carrito */
   let contentTotal = document.getElementById("cart-pay-total")
   let cartTotalHtml= `
                     <span ><span id="items-count">${items}</span> items</span>
                     <span >$${total}</span>
                     ` 
   contentTotal.innerHTML = cartTotalHtml
+  
+  /* Numero Total Items */
+  let numItem = document.getElementById("num-item") 
+  numItem.innerHTML =   `${items}`
 }
 
 
