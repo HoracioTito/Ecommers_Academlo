@@ -13,7 +13,7 @@ const arrItems = [
     {
       id: 2,
       name: 'Shirts',
-      price: 24.00,
+      price: 41.00,
       image: 'assets/items_img/featured2.png',
       description :'Escote Redondo. Composición: 50% algodón - 50% poliéster . Corte: Regular.',
       category: 'shirts',
@@ -22,7 +22,7 @@ const arrItems = [
     {
       id: 3,
       name: 'Sweatshirts',
-      price: 24.00,
+      price: 32.00,
       image: 'assets/items_img/featured3.png',
       description :'Esta campera clásica está confeccionada en rústico grueso de algodón, pensado para ser duradera. Calce de corte clásico con capucha, cordón de ajuste y bolsillo canguro.',
       category: 'sweatshirts',
@@ -40,7 +40,7 @@ const arrItems = [
     {
       id: 5,
       name: 'Shirts',
-      price: 24.00,
+      price: 19.00,
       image: 'assets/items_img/canguro_5.png',
       description :'La Campera Lotto Smart está confeccionada en poliéster y fue pensada para ser un must en tu ropero a la hora de elegir tu outfit y salir a la calle. ',
       category: 'shirts',
