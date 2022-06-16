@@ -24,7 +24,20 @@
 html {
     scroll-behavior: smooth;
   }
-
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--first-color); 
+  }
 
 /*  COLORES DARK MODE: */
  body.dark-theme{
@@ -163,7 +176,7 @@ input#menu-hamburguesa:checked ~ ul{
     background-color: var(--container-color);
     z-index: 102;
     width: 100%;
-    min-height: 50%;
+    height: 100vh;
     top: 0;
     right: -100%;
     padding: 3rem 2.5rem;
@@ -177,9 +190,8 @@ input#menu-hamburguesa:checked ~ ul{
 .cart-product{
     display: grid;
     row-gap: 1.5rem;
-    max-height: 400px;
-    height: 100%;
-    overflow: scroll;
+    max-height: 70vh;
+    overflow-y: scroll;
 }
 
 .cart-product > div > img{
@@ -443,10 +455,14 @@ input#menu-hamburguesa:checked ~ ul{
 /* VISTA PRODUCTOS END */
 
 /* FOOTER */
+.footer-color{
+    background-color: var(--first-color);    
+}
+
 .footer{
     padding: 1.5rem;
     text-align: center;
-    background-color: var(--first-color);
+
      color: var(--text-color-white);
 }
 
@@ -509,10 +525,10 @@ input#menu-hamburguesa:checked ~ ul{
         height: fit-content; */
     }
     .cart {
-        width: 420px;
+        width: 480px;
     }
     .cart-unit {
-        gap: 40px;
+        gap: 60px;
     }
 
     .cont-product-ul {
@@ -564,7 +580,7 @@ input#menu-hamburguesa:checked ~ ul{
         height: fit-content; */
     }
     .cart {
-        width: 420px;
+        width: 450px;
     }
     .cart-unit {
         gap: 40px;

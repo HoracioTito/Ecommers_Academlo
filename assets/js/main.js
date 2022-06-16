@@ -140,6 +140,16 @@ const arrItems = [
    }); 
    /* Mostaramos Productos */
    contentProduct.innerHTML = listItems
+
+   /* Cargar carrito almcenado en memoria Browser */
+   if ( localStorage.length >0 ){
+
+    /***************************
+     *  Actualiza carrito
+     * *************************/
+    cartUpdate(localStorage.length)
+  }
+
  } 
   /**********  FILTRO  ********* 
    * 3- FN FILTRO Productos    *
@@ -175,7 +185,7 @@ const arrItems = [
   
  /**********  FILTRO  ********* 
    * 4 - FN Imformacion Producto
-   * Click sobre imagne     *
+   * Click sobre imagen     *
    * **************************/
   function productInfo(){
     /* Retorna array objetos con propiedades , img.clase*/
@@ -191,11 +201,9 @@ const arrItems = [
           //console.log(infoLi.getAttribute("data-filter"))
           let idItem = infoImg.getAttribute("data-id")
           /* Cargar Informacion a HOme */
-
           homeProduct(idItem)
 
-
-       });/* */
+       });
     })
 
   } 
